@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Herois</string>
+    <string name="her_is">Heróis</string>
+    <string name="vil_es">Vilões</string>
+    <string name="bem_vindo">Bem Vindo</string>
+    <string name="hnome">Nome</string>
+    <string name="hcodinome">Codinome</string>
+    <string name="hesp_cie">Espécie</string>
+    <string name="hhabilidades">Habilidades</string>
+    <string name="hvulnerabilidades">Vulnerabilidades</string>
+    <string name="hn_vel_de_acesso">Nível de Acesso</string>
+    <string name="hequipamentos">Equipamentos</string>
+    <string name="hdescri_o_dos_equipamentos">Descrição dos Equipamentos</string>
+    <string name="hcadastrar">Cadastrar</string>
 </resources>
