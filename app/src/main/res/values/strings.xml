@@ -12,4 +12,9 @@
     <string name="hequipamentos">Equipamentos</string>
     <string name="hdescri_o_dos_equipamentos">Descrição dos Equipamentos</string>
     <string name="hcadastrar">Cadastrar</string>
+    <string name="vher_is_rivais">Heróis Rivais</string>
+    <string name="vesconderijos">Esconderijos</string>
+    <string name="vdata_dos_ataques">Data dos Ataques</string>
+    <string name="consulta_her_i">Consulta Herói</string>
+    <string name="consulta_vil_o">Consulta Vilão</string>
 </resources>

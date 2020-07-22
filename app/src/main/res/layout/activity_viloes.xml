@@ -1,8 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Viloes">
 
+    <EditText
+        android:id="@+id/etEscond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txEscond"
+        app:layout_constraintTop_toBottomOf="@+id/txEscond"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etDatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txDatas"
+        app:layout_constraintTop_toBottomOf="@+id/txDatas"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etRivais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txRivais"
+        app:layout_constraintTop_toBottomOf="@+id/txRivais"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etVulneb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txVulneb"
+        app:layout_constraintTop_toBottomOf="@+id/txVulneb"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hnome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/txEspec"
+        android:layout_width="57dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/hesp_cie"
+        app:layout_constraintEnd_toEndOf="@+id/txCodn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txCodn"
+        app:layout_constraintTop_toBottomOf="@+id/txCodn" />
+
+    <TextView
+        android:id="@+id/txVulneb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/hvulnerabilidades"
+        app:layout_constraintEnd_toEndOf="@+id/txHab"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txHab"
+        app:layout_constraintTop_toBottomOf="@+id/txHab" />
+
+    <TextView
+        android:id="@+id/txNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/hn_vel_de_acesso"
+        app:layout_constraintEnd_toEndOf="@+id/txVulneb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txVulneb"
+        app:layout_constraintTop_toBottomOf="@+id/txVulneb" />
+
+    <TextView
+        android:id="@+id/txEquip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/hequipamentos"
+        app:layout_constraintEnd_toEndOf="@+id/txNivel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txNivel"
+        app:layout_constraintTop_toBottomOf="@+id/txNivel" />
+
+    <TextView
+        android:id="@+id/txDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/hdescri_o_dos_equipamentos"
+        app:layout_constraintEnd_toEndOf="@+id/txEquip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txEquip"
+        app:layout_constraintTop_toBottomOf="@+id/txEquip" />
+
+    <TextView
+        android:id="@+id/txCodn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/hcodinome"
+        app:layout_constraintEnd_toEndOf="@+id/txNome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txNome"
+        app:layout_constraintTop_toBottomOf="@+id/txNome" />
+
+    <TextView
+        android:id="@+id/txHab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/hhabilidades"
+        app:layout_constraintEnd_toEndOf="@+id/txEspec"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txEspec"
+        app:layout_constraintTop_toBottomOf="@+id/txEspec" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/txNome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txNome"
+        app:layout_constraintTop_toBottomOf="@+id/txNome"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txCodn"
+        app:layout_constraintTop_toBottomOf="@+id/txCodn"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etEspec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txEspec"
+        app:layout_constraintTop_toBottomOf="@+id/txEspec"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etHab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txHab"
+        app:layout_constraintTop_toBottomOf="@+id/txHab"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txNivel"
+        app:layout_constraintTop_toBottomOf="@+id/txNivel"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etEquip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txEquip"
+        app:layout_constraintTop_toBottomOf="@+id/txEquip"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txDesc"
+        app:layout_constraintTop_toBottomOf="@+id/txDesc"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Cadastrar"
+        android:text="@string/hcadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/txRivais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/vher_is_rivais"
+        app:layout_constraintStart_toStartOf="@+id/txDesc"
+        app:layout_constraintTop_toBottomOf="@+id/txDesc" />
+
+    <TextView
+        android:id="@+id/txEscond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/vesconderijos"
+        app:layout_constraintStart_toStartOf="@+id/txRivais"
+        app:layout_constraintTop_toBottomOf="@+id/txRivais" />
+
+    <TextView
+        android:id="@+id/txDatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/vdata_dos_ataques"
+        app:layout_constraintStart_toStartOf="@+id/txEscond"
+        app:layout_constraintTop_toBottomOf="@+id/txEscond" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

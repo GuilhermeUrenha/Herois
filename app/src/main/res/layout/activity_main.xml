@@ -12,33 +12,56 @@
         android:layout_height="wrap_content"
         android:text="@string/bem_vindo"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btHero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
         android:onClick="Herois"
         android:text="@string/her_is"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btVillain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:onClick="Viloes"
         android:text="@string/vil_es"
-        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="@+id/btHero"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        app:layout_constraintStart_toStartOf="@+id/btHero"
+        app:layout_constraintTop_toBottomOf="@+id/btHero" />
+
+    <Button
+        android:id="@+id/btHeroC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:onClick="ConsultaHero"
+        android:text="@string/consulta_her_i"
+        app:layout_constraintStart_toEndOf="@+id/btHero"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btVillainC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="ConsultaVillain"
+        android:text="@string/consulta_vil_o"
+        app:layout_constraintEnd_toEndOf="@+id/btHeroC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btHeroC"
+        app:layout_constraintTop_toBottomOf="@+id/btHeroC" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

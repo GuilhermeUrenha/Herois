@@ -22,4 +22,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Viloes.class);
         this.startActivity(intent);
     }
+
+    public void ConsultaHero(View view){
+        Intent intent = new Intent(this, ConsultaHero.class);
+        this.startActivity(intent);
+    }
+    public void ConsultaVillain(View view){
+        Intent intent = new Intent(this, ConsultaVillain.class);
+        this.startActivity(intent);
+    }
 }
