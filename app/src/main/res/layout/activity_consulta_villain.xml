@@ -1,8 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConsultaVillain">
 
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow tools:ignore="UselessParent">
+            <TextView
+                android:layout_column="1"
+                android:text="@string/hnome"
+                android:padding="3dip" />
+            <TextView
+                android:text="@string/hcodinome"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/hesp_cie"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/hhabilidades"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/hvulnerabilidades"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/hn_vel_de_acesso"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/hequipamentos"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/hdescri_o_dos_equipamentos"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/vher_is_rivais"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/vesconderijos"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:text="@string/vdata_dos_ataques"
+                android:gravity="right"
+                android:padding="3dip"
+                tools:ignore="RtlHardcoded" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
